@@ -1,0 +1,41 @@
+---
+import { BlogsItem } from '@components/cards';
+import { Header } from '@components/misc';
+import { BaseHead } from '@components/seo';
+import { SITE_DESCRIPTION, SITE_TITLE } from '@data/index';
+import { getCollection } from 'astro:content';
+import RootLayout from '@layouts/root-layout.astro';
+
+const blog = (await getCollection('blogs')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<!doctype html>
+<html lang='en'>
+	<head>
+		<BaseHead
+			title="Blog"
+			description="Rutip's Blog"
+			image='/images/ogimage.png'
+		/>
+	</head>
+	<RootLayout>
+		<div
+			id='Header+title'
+			class='flex flex-col w-full gap-6 max-w-xl'>
+			<Header />
+			<h1 class='w-full text-6xl font-medium tracking-tight'>blog</h1>
+
+			{
+				blog.map((blogs) => (
+					<BlogsItem
+						title={blogs.data.title}
+						date={blogs.data.pubDate}
+						slug={blogs.slug}
+					/>
+				))
+			}
+		</div>
+	</RootLayout>
+</html>

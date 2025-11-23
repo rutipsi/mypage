@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    font-family: 'UncutSans', sans-serif;
+    @apply bg-white text-black dark:bg-black dark:text-white;
+  }
+
+
+  @font-face {
+    font-family: 'UncutSans';
+    src:
+      local('UncutSans'),
+      url('/fonts/uncut/woff2/UncutSans-Bold.woff2') format('woff2');
+    src:
+      local('UncutSans'),
+      url('/fonts/uncut/woff/UncutSans-Bold.woff') format('woff');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'UncutSans';
+    src:
+      local('UncutSans'),
+      url('/fonts/uncut/woff2/UncutSans-Semibold.woff2') format('woff2');
+    src:
+      local('UncutSans'),
+      url('/fonts/uncut/woff/UncutSans-Semibold.woff') format('woff');
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: 'UncutSans';
+    src:
+      local('UncutSans'),
+      url('/fonts/uncut/woff2/UncutSans-Medium.woff2') format('woff2');
+    src:
+      local('UncutSans'),
+      url('/fonts/uncut/woff/UncutSans-Medium.woff') format('woff');
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'UncutSans';
+    src:
+      local('UncutSans'),
+      url('/fonts/uncut/woff2/UncutSans-Regular.woff2') format('woff2');
+    src:
+      local('UncutSans'),
+      url('/fonts/uncut/woff/UncutSans-Regular.woff') format('woff');
+    font-weight: 400;
+  }
+
+    @font-face {
+        font-family: 'Titleboy';
+        src:
+                local('Titleboy'),
+                url('/fonts/uncut/woff2/Titleboy-Medium.woff2') format('woff2');
+        src:
+                local('Titleboy'),
+                url('/fonts/uncut/woff/Titleboy-Medium.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Bodyboy Thin */
+    @font-face {
+        font-family: 'Bodyboy';
+        src: url('/fonts/uncut/woff2/Bodyboy Thin.woff2') format('woff2'),
+        url('/fonts/uncut/woff/Bodyboy Thin.woff') format('woff');
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Bodyboy Ultra Light */
+    @font-face {
+        font-family: 'Bodyboy';
+        src: url('/fonts/uncut/woff2/Bodyboy Ultra Light.woff2') format('woff2'),
+        url('/fonts/uncut/woff/Bodyboy Ultra Light.woff') format('woff');
+        font-weight: 200;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Bodyboy Ultra Light Italic */
+    @font-face {
+        font-family: 'Bodyboy';
+        src: url('/fonts/uncut/woff2/Bodyboy Ultra Light Italic.woff2') format('woff2'),
+        url('/fonts/uncut/woff/Bodyboy Ultra Light Italic.woff') format('woff');
+        font-weight: 200;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    /* Bodyboy Extra Light */
+    @font-face {
+        font-family: 'Bodyboy';
+        src: url('/fonts/uncut/woff2/Bodyboy Extra Light.woff2') format('woff2'),
+        url('/fonts/uncut/woff/Bodyboy Extra Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Bodyboy Extra Light Italic */
+    @font-face {
+        font-family: 'Bodyboy';
+        src: url('/fonts/uncut/woff2/Bodyboy Extra Light Italic.woff2') format('woff2'),
+        url('/fonts/uncut/woff/Bodyboy Extra Light Italic.woff') format('woff');
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    /* Bodyboy Light */
+    @font-face {
+        font-family: 'Bodyboy';
+        src: url('/fonts/uncut/woff2/Bodyboy Light.woff2') format('woff2'),
+        url('/fonts/uncut/woff/Bodyboy Light.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Bodyboy Light Italic */
+    @font-face {
+        font-family: 'Bodyboy';
+        src: url('/fonts/uncut/woff2/Bodyboy Light Italic.woff2') format('woff2'),
+        url('/fonts/uncut/woff/Bodyboy Light Italic.woff') format('woff');
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    /* Bodyboy Regular */
+    @font-face {
+        font-family: 'Bodyboy';
+        src: url('/fonts/uncut/woff2/Bodyboy Regular.woff2') format('woff2'),
+        url('/fonts/uncut/woff/Bodyboy Regular.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Bodyboy Medium */
+    @font-face {
+        font-family: 'Bodyboy';
+        src: url('/fonts/uncut/woff2/Bodyboy Medium.woff2') format('woff2'),
+        url('/fonts/uncut/woff/Bodyboy Medium.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Bodyboy Bold */
+    @font-face {
+        font-family: 'Bodyboy';
+        src: url('/fonts/uncut/woff2/Bodyboy Bold.woff2') format('woff2'),
+        url('/fonts/uncut/woff/Bodyboy Bold.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Bodyboy Extra Bold */
+    @font-face {
+        font-family: 'Bodyboy';
+        src: url('/fonts/uncut/woff2/Bodyboy Extra Bold.woff2') format('woff2'),
+        url('/fonts/uncut/woff/Bodyboy Extra Bold.woff') format('woff');
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Bodyboy Black */
+    @font-face {
+        font-family: 'Bodyboy';
+        src: url('/fonts/uncut/woff2/Bodyboy Black.woff2') format('woff2'),
+        url('/fonts/uncut/woff/Bodyboy Black.woff') format('woff');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+
+
+/* ---------- CHROME / SAFARI / EDGE ---------- */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    /* Use background-image explicitly and a big background-size */
+    background-image: linear-gradient(
+            180deg,
+            #ff004c,
+            #ff7a00,
+            #ffee00,
+            #00ff1e,
+            #00e0ff,
+            #6000ff,
+            #ff00d4
+    );
+    background-size: 300% 300%;
+    animation: rgbScroll 6s linear infinite;
+    /* slight inset so it doesn't touch edges */
+    border: 2px solid transparent;
+    background-clip: content-box;
+    box-shadow: none;
+    will-change: background-position;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Keyframes animate background-position to create fluid movement */
+@keyframes rgbScroll {
+    0% { background-position: 0% 20%; }
+    50% { background-position: 100% 80%; }
+    100% { background-position: 0% 20%; }
+}
+
+/* ---------- FIREFOX FALLBACK ---------- */
+/* Firefox can't animate gradient on native scrollbar; use thin + color fallback */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.15) transparent;
+}
+
+html, body {
+    background-color: #006abd !important;
+}
+
+/* Yellow text selection */
+::selection {
+    background: #ffffff;   /* light pastel yellow */
+    color: black;          /* selected text color */
+}
