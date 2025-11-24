@@ -1,9 +1,13 @@
 ![ A website with the title "Rutip's Page" and navigation links for "home", "blog", "notes", and "photos".](/public/images/ogimage.png)
 
 # 🌐 Rutip's Page
-hey! this is my personal corner on the web where I share my thoughts, ideas, and projects. feel free to explore and contact me if you have any questions or just want to chat. 
+hey! im rutip and i always wanted to have my personal website as kid but lacked the funds and the knowledge. finally i have some money to spare to my hobby
+and this professionally made - beautiful template from [Sanju](https://github.com/Spikeysanju). without him this wouldn't exist. i probably would've
+just copied someone else's lmao. my brain's too small to learn this but i had cs major and i do know few things and that is how i was able to 
+edit the original template which is hard to do ngl.
 
 ## 📖 about project
+im not a coder or web dev, this is not my original creation - this is a fork sanju's personal website [template](https://github.com/Spikeysanju/sanju.sh)
 this is a simple personal website i built using [astro](https://astro.build/), a static site generator. i chose Astro for its speed, flexibility, and ease of use. i hope you like the site!
 
 
@@ -44,7 +48,7 @@ if you don't want to use analytics, you can remove the analytics code from the [
 if you have ideas or suggestions, feel free to open an issue or submit a pull request. i'm open to collaborations and contributions.
 
 ## 📬 contact
-you can reach me at work@sanju.sh or on twitter. don't hesitate to get in touch!
+you can reach me at hey@rutip.lol or on twitter. don't hesitate to get in touch!
 
 ## 📜 license
 this project is open source under the Apache License 2.0. you're welcome to use the code for your own projects. if you do, a shoutout would be appreciated but it's not required.
