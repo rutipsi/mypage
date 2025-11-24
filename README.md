@@ -1,4 +1,4 @@
-![ A website with the title "Rutip's Page" and navigation links for "home", "writing", "thoughts", and "ships".]
+![ A website with the title "Rutip's Page" and navigation links for "home", "blog", "notes", and "photos".](/public/images/ogimage.png)
 
 # 🌐 Rutip's Page
 hey! this is my personal corner on the web where I share my thoughts, ideas, and projects. feel free to explore and contact me if you have any questions or just want to chat. 
